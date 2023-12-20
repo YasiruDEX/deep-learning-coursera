@@ -1,0 +1,473 @@
+Skip to Main Content <#main>
+Coursera
+ <https://www.coursera.org/>
+Search in course
+
+Search
+
+  * Browse <https://www.coursera.org/browse>
+  * Top Courses <https://www.coursera.org/courses>
+  * Profile <https://www.coursera.org/account-profile>
+  * My Purchases <https://www.coursera.org/my-purchases>
+  * Settings <https://www.coursera.org/account-settings>
+  * Updates <https://www.coursera.org/updates>
+  * Accomplishments <https://www.coursera.org/accomplishments>
+  * Help Center <https://learner.coursera.help/hc/en>
+  *
+    Log Out
+
+  *
+
+    English
+
+  *
+    Show notificationsNotification Center Icon
+
+    1
+  *
+
+    Yasiru Nipun Basnayake
+
+List
+
+Coursera
+ <https://www.coursera.org/>
+
+Hide menu
+
+  *
+
+
+        Introduction to ML Strategy
+
+  *
+
+
+        Connect with your Mentors and Fellow Learners on Discourse!
+
+  *
+
+
+        Setting Up your Goal
+
+  *
+
+
+        Comparing to Human-level Performance
+
+  *
+
+
+        Lecture Notes (Optional)
+
+  *
+
+
+        Machine Learning Flight Simulator (Quiz)
+
+      o
+        Completed
+        *Reading: *ReadingMachine Learning Flight Simulator
+        . Duration: 2 minutes2 min
+         <https://www.coursera.org/learn/machine-learning-projects/supplement/bLMRX/machine-learning-flight-simulator>
+      o
+        Completed
+        *Quiz: *Bird Recognition in the City of Peacetopia (Case Study)
+        Submitted
+         <https://www.coursera.org/learn/machine-learning-projects/exam/JBzL3/bird-recognition-in-the-city-of-peacetopia-case-study>
+  *
+
+
+        Heroes of Deep Learning (Optional)
+
+ 1.
+
+    <https://www.coursera.org/learn/machine-learning-projects/home/welcome>
+ 2.
+
+    Week 1
+    <https://www.coursera.org/learn/machine-learning-projects/home/week/1>
+ 3.
+
+    Bird Recognition in the City of Peacetopia (Case Study) 
+
+Previous
+<https://www.coursera.org/learn/machine-learning-projects/supplement/bLMRX/machine-learning-flight-simulator>Next
+
+<https://www.coursera.org/learn/machine-learning-projects/lecture/Ggkxn/andrej-karpathy-interview>
+
+Menu
+Quiz
+
+
+  Bird Recognition in the City of Peacetopia (Case Study)
+
+Activity Completed
+
+
+      Submit your assignment
+
+Due December 8, 11:59 PM +0530Dec 8, 11:59 PM +0530
+Attempts 3 every 8 hours
+Try again
+Activity Completed
+
+
+      Receive grade
+
+To Pass 80% or higher
+
+
+      Your grade
+
+80%
+View Feedback
+
+We keep your highest score
+
+Like
+
+Dislike
+
+Report an issue
+
+Chat with us
+Chat with us
+
+Back
+
+
+  Bird Recognition in the City of Peacetopia (Case Study)
+
+Graded Quiz. • 1h 15m
+
+English
+
+DueDec 8, 11:59 PM +0530
+Assessment passed
+
+
+    Congratulations! You passed!
+
+Grade received 80%
+Latest Submission Grade 80%
+To pass 80% or higher
+Go to next item
+
+
+      1.
+
+Question 1
+
+*Problem Statement*
+
+This example is adapted from a real production application, but with details disguised to protect confidentiality.
+
+You are a famous researcher in the City of Peacetopia. The people of Peacetopia have a common characteristic: they are afraid of birds. To save them, you have *to build an algorithm that will detect any bird flying over Peacetopia* and alert the population.
+
+The City Council gives you a dataset of 10,000,000 images of the sky above Peacetopia, taken from the city’s security cameras. They are labeled:
+
+  *
+
+    y = 0: There is no bird on the image
+
+  *
+
+    y = 1: There is a bird on the image
+
+Your goal is to build an algorithm able to classify new images taken by security cameras from Peacetopia.
+
+There are a lot of decisions to make:
+
+  *
+
+    What is the evaluation metric?
+
+  *
+
+    How do you structure your data into train/dev/test sets?
+
+*Metric of success*
+
+The City Council tells you that they want an algorithm that
+
+ 1.
+
+    Has high accuracy.
+
+ 2.
+
+    Runs quickly and takes only a short time to classify a new image. 
+
+ 3.
+
+    Can fit in a small amount of memory, so that it can run in a small processor that the city will attach to many different security cameras.
+
+_Note_: Having three evaluation metrics makes it harder for you to quickly choose between two different algorithms, and will slow down the speed with which your team can iterate. True/False?
+
+1 / 1 point
+
+Expand
+
+Correct
+
+
+      2.
+
+Question 2
+
+The city revises its criteria to:
+
+  *
+
+    "We *need* an algorithm that can let us know a bird is flying over Peacetopia as accurately as possible."
+
+  *
+
+    "We /want/ the trained model to take no more than 10 sec to classify a new image.”
+
+  *
+
+    “We /want/ the model to fit in 10MB of memory.”
+
+Given models with different accuracies, runtimes, and memory sizes, how would you choose one?
+
+1 / 1 point
+
+Expand
+
+Correct
+
+Yes. Once you meet the runtime and memory thresholds, accuracy should be maximized.
+
+
+      3.
+
+Question 3
+
+Based on the city’s requests, which of the following would you say is true?
+
+1 / 1 point
+
+Expand
+
+Correct
+
+
+      4.
+
+Question 4
+
+*Structuring your data*
+
+Before implementing your algorithm, you need to split your data into train/dev/test sets. Which of these do you think is the best choice?
+
+1 / 1 point
+
+Expand
+
+Correct
+
+Yes.
+
+
+      5.
+
+Question 5
+
+After setting up your train/dev/test sets, the City Council comes across another 1,000,000 images, called the “citizens’ data”. Apparently the citizens of Peacetopia are so scared of birds that they volunteered to take pictures of the sky and label them, thus contributing these additional 1,000,000 images. These images are different from the distribution of images the City Council had originally given you, but you think it could help your algorithm. 
+
+Notice that adding this additional data to the training set will make the distribution of the training set different from the distributions of the dev and test sets.
+
+Is the following statement true or false?
+
+"You should not add the citizens' data to the training set, because if the training distribution is different from the dev and test sets, then this will not allow the model to perform well on the test set."
+
+1 / 1 point
+
+Expand
+
+Correct
+
+False is correct: Sometimes we'll need to train the model on the data that is available, and its distribution may not be the same as the data that will occur in production. Also, adding training data that differs from the dev set may still help the model improve performance on the dev set. What matters is that the dev and test set have the same distribution.
+
+
+      6.
+
+Question 6
+
+One member of the City Council knows a little about machine learning and thinks you should add the 1,000,000 citizens’ data images to the dev set. You object because: (Choose all that apply)
+
+0 / 1 point
+
+Expand
+
+Incorrect
+
+You chose the extra incorrect answers.
+
+
+      7.
+
+Question 7
+
+You train a system, and its errors are as follows (error = 100%-Accuracy):
+
+Training set error
+
+	
+
+4.0%
+
+Dev set error
+
+	
+
+4.5%
+
+This suggests that one good avenue for improving performance is to train a bigger network so as to drive down the 4.0% training error. Do you agree?
+
+1 / 1 point
+
+Expand
+
+Correct
+
+
+      8.
+
+Question 8
+
+You want to define what human-level performance is to the city council. Which of the following is the best answer?
+
+1 / 1 point
+
+Expand
+
+Correct
+
+Yes. The best human performance is closest to Bayes' error.
+
+
+      9.
+
+Question 9
+
+Which of the following statements do you agree with?
+
+1 / 1 point
+
+Expand
+
+Correct
+
+
+      10.
+
+Question 10
+
+After working on your algorithm you have to decide the next steps. Currently, human-level performance is 0.1%, training is at 2.0% and the dev set is at 2.1%. Which statement below best describes your thought process?
+
+0 / 1 point
+
+Expand
+
+Incorrect
+
+You didn't select all the correct answers
+
+
+      11.
+
+Question 11
+
+You’ve now also run your model on the test set and find that it is a 7.0% error compared to a 2.1% error for the dev set. What should you do? (Choose all that apply)
+
+1 / 1 point
+
+Expand
+
+Correct
+
+Great, you got all the right answers.
+
+
+      12.
+
+Question 12
+
+After working on this project for a year, you finally achieve: 
+
+Human-level performance
+
+	
+
+0.10%
+
+Training set error
+
+	
+
+0.05%
+
+Dev set error
+
+	
+
+0.05%
+
+What can you conclude? (Check all that apply.)
+
+1 / 1 point
+
+Expand
+
+Correct
+
+Great, you got all the right answers.
+
+
+      13.
+
+Question 13
+
+Your system is now very accurate but has a higher false negative rate than the City Council of Peacetopia would like. What is your best next step?
+
+0 / 1 point
+
+Expand
+
+Incorrect
+
+No. This choice also points to the incorrect target.
+
+
+      14.
+
+Question 14
+
+You’ve handily beaten your competitor, and your system is now deployed in Peacetopia and is protecting the citizens from birds! But over the last few months, a new species of bird has been slowly migrating into the area, so the performance of your system slowly degrades because your data is being tested on a new type of data.
+
+You have only 1,000 images of the new species of bird. The city expects a better system from you within the next 3 months. Which of these should you do first?
+
+1 / 1 point
+
+Expand
+
+Correct
+
+
+      15.
+
+Question 15
+
+The City Council thinks that having more Cats in the city would help scare off birds. They are so happy with your work on the Bird detector that they also hire you to build a Cat detector. (Wow Cat detectors are just incredibly useful, aren’t they?) Because of years of working on Cat detectors, you have such a huge dataset of 100,000,000 cat images that training on this data takes about two weeks. Which of the statements do you agree with? (Check all that agree.)
+
+1 / 1 point
+
+Expand
+
+Correct
+
+Great, you got all the right answers.
+
